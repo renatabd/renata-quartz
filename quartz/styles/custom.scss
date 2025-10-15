@@ -1,3 +1,5 @@
+@use "./base.scss";
+
 /* 🌸 Tema Renata's Laboratory — Quartz v4 (custom.scss) */
 
 /* Paleta */
@@ -28,14 +30,12 @@ a:hover {
 }
 
 /* Títulos mais fofos */
-h1, h2, h3 {
-  letter-spacing: .2px;
-}
+h1, h2, h3 { letter-spacing: .2px; }
 h1 { font-size: clamp(1.8rem, 2.5vw, 2.4rem); }
 h2 { font-size: clamp(1.4rem, 2.0vw, 1.8rem); }
 h3 { font-size: clamp(1.2rem, 1.6vw, 1.4rem); }
 
-/* Cartões/containers (listagens, notas) */
+/* Cartões/containers */
 .page, .content, .article, main article, .popover {
   background: var(--card);
   border: 1.5px solid var(--border);
@@ -53,7 +53,7 @@ blockquote {
   color: var(--muted);
 }
 
-/* Código inline e blocos */
+/* Código */
 code, pre code {
   background: #fff2f7;
   border: 1px solid var(--border);
@@ -77,16 +77,10 @@ table {
   border-radius: 12px;
   overflow: hidden;
 }
-th, td {
-  border-bottom: 1px solid var(--border);
-  padding: .6rem .7rem;
-}
-thead th {
-  background: var(--accent-2);
-  color: var(--muted);
-}
+th, td { border-bottom: 1px solid var(--border); padding: .6rem .7rem; }
+thead th { background: var(--accent-2); color: var(--muted); }
 
-/* Badges de tags (usa os links de tags) */
+/* Badges de tags */
 .tags a, a.tag, .tag-link {
   display: inline-block;
   background: var(--accent-2);
@@ -98,7 +92,7 @@ thead th {
   font-size: .85rem;
 }
 
-/* Callouts do Obsidian ( > [!note] ) */
+/* Callouts ( > [!note] ) */
 .callout, .admonition, .callout-note, .callout-tip, .callout-info, .callout-warning, .callout-caution, .callout-danger {
   border: 1.5px solid var(--border);
   border-left-width: 6px;
@@ -118,10 +112,5 @@ thead th {
 ul, ol { padding-left: 1.2rem; }
 li { margin: .2rem 0; }
 
-/* Navegação (seletivamente; pode não existir em todos os temas/layouts) */
-nav a {
-  border: none;
-}
-@use "./base.scss";
-
-// put your custom CSS here!
+/* Navegação (se existir) */
+nav a { border: none; }
