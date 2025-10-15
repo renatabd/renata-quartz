@@ -1,107 +1,124 @@
-@use "./base.scss";
-/* fontes (retrô + serif) */
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:wght@400;600&display=swap");
+/* Tema vintage seguro — sem @import/@use */
 
-/* 🎨 Paleta inspirada no seu site */
+/* Paleta */
 :root{
-  --bg:        #3b1f0e;  /* marrom aveludado (fundo) */
-  --ink:       #f5e6ca;  /* creme (texto) */
-  --muted:     #dbc9aa;  /* creme suave */
-  --accent:    #4e8c8a;  /* verde-água (links) */
-  --accent-2:  #c27a6d;  /* rosa antigo (destaques) */
-  --card:      #2c1509;  /* marrom mais escuro (cartões) */
-  --border:    #6b513d;  /* marrom médio (borda) */
+  --bg:#3b1f0e;         /* marrom aveludado (fundo) */
+  --ink:#f5e6ca;        /* creme (texto) */
+  --muted:#dbc9aa;      /* creme suave */
+  --accent:#4e8c8a;     /* verde-água (links) */
+  --accent-2:#c27a6d;   /* rosa antigo (destaques) */
+  --card:#2c1509;       /* marrom escuro (cartões) */
+  --border:#6b513d;     /* marrom médio (borda) */
 }
 
-/* 🧾 textura leve tipo papel damasco (apenas CSS) */
-html,body{
-  background:
-    radial-gradient(1200px 600px at 20% -20%, rgba(255,255,255,0.04), transparent 60%),
-    radial-gradient(900px 600px at 120% 120%, rgba(0,0,0,0.20), transparent 60%),
-    repeating-linear-gradient(135deg, rgba(255,255,255,.03) 0 12px, rgba(0,0,0,.03) 12px 24px),
-    var(--bg);
-  color: var(--ink);
-  font-family: "Cormorant Garamond", ui-serif, Georgia, serif;
-}
+/* Base */
+html,body{background:var(--bg);color:var(--ink);}
+body,p,li,span,div,section,article{color:var(--ink);}
 
-/* títulos com cara de placa antiga */
-h1,h2,h3{
-  font-family: "IM Fell English", ui-serif, Georgia, serif;
-  letter-spacing:.3px;
-  color: var(--ink);
-  text-shadow: 0 1px 0 rgba(0,0,0,.35);
-}
+/* Títulos */
+h1,h2,h3{letter-spacing:.3px;color:var(--ink);text-shadow:0 1px 0 rgba(0,0,0,.35)}
 h1{font-size:clamp(2.0rem,3.2vw,2.6rem)}
 h2{font-size:clamp(1.5rem,2.4vw,2.0rem)}
 h3{font-size:clamp(1.2rem,1.8vw,1.4rem)}
 
-/* links no verde-água com sublinhado pontilhado */
-a{
-  color: var(--accent);
-  text-decoration:none;
-  border-bottom:1px dotted var(--accent);
-}
-a:hover{ filter:brightness(.92); border-bottom-color:transparent }
+/* Links */
+a,a:visited{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+a:hover{filter:brightness(.92);border-bottom-color:transparent}
 
-/* cartões/conteúdo com moldura */
-.page, .content, .article, main article, .popover{
-  background: var(--card);
-  border: 2px solid var(--border);
-  border-radius: 14px;
-  box-shadow: 0 8px 22px rgba(0,0,0,.35);
-  padding: 1.0rem 1.2rem;
+/* Contêineres */
+.page,.content,.article,main article,.popover{
+  background:var(--card);
+  border:2px solid var(--border);
+  border-radius:14px;
+  box-shadow:0 8px 22px rgba(0,0,0,.35);
+  padding:1rem 1.2rem;
 }
 
-/* blocos de citação “papel” */
-blockquote{
-  background: color-mix(in oklab, var(--accent-2) 18%, var(--card));
-  border-left: 6px solid var(--accent-2);
-  color: var(--muted);
-  padding:.8rem 1rem; margin:1rem 0;
+/* Citação */
+blockquote{background:#3a1f15;border-left:6px solid var(--accent-2);color:var(--muted);padding:.8rem 1rem;margin:1rem 0}
+
+/* Código */
+code,pre code{background:#2a1209;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:.15rem .35rem}
+pre{padding:1rem 1.1rem;overflow-x:auto}
+
+/* Tabelas */
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+th,td{border-bottom:1px solid var(--border);padding:.6rem .7rem}
+thead th{background:#2f180c;color:var(--muted)}
+
+/* Tags */
+.tags a,a.tag,.tag-link{
+  display:inline-block;background:#3a231a;color:var(--ink);
+  border:1px solid var(--border);border-radius:999px;
+  padding:.18rem .6rem;margin:.15rem .2rem;font-size:.85rem;
 }
 
-/* código */
-code, pre code{
-  background: #2a1209;
-  color: var(--muted);
-  border:1px solid var(--border);
-  border-radius:10px;
-  padding:.15rem .35rem;
+/* Callouts */
+.callout,.admonition{
+  border:2px solid var(--border);border-left-width:8px;border-radius:14px;
+  padding:.9rem 1.1rem;margin:1rem 0;background:#241108;color:var(--ink)
 }
-pre{padding:1rem 1.1rem; overflow-x:auto}
+.callout-note{border-left-color:#7aa2f7;background:#1f2230}
+.callout-tip{border-left-color:#73daca;background:#122522}
+.callout-info{border-left-color:#7dcfff;background:#142833}
+.callout-warning{border-left-color:#e0af68;background:#2e2212}
+.callout-danger{border-left-color:#f7768e;background:#2b1418}
 
-/* tabelas */
-table{width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--border); border-radius:12px; overflow:hidden}
-th,td{border-bottom:1px solid var(--border); padding:.6rem .7rem}
-thead th{background: #2f180c; color: var(--muted)}
-
-/* badges de tags */
-.tags a, a.tag, .tag-link{
-  display:inline-block;
-  background: color-mix(in oklab, var(--accent-2) 25%, var(--card));
-  color: var(--ink);
-  border:1px solid var(--border);
-  border-radius:999px;
-  padding:.18rem .6rem; margin:.15rem .2rem; font-size:.85rem;
-}
-
-/* callouts ( > [!note] ) */
-.callout, .admonition{
-  border:2px solid var(--border); border-left-width:8px;
-  border-radius:14px; padding:.9rem 1.1rem; margin:1rem 0; background:#241108;
-}
-.callout-note    { border-left-color:#7aa2f7; background:#1f2230 }
-.callout-tip     { border-left-color:#73daca; background:#122522 }
-.callout-info    { border-left-color:#7dcfff; background:#142833 }
-.callout-warning { border-left-color:#e0af68; background:#2e2212 }
-.callout-danger  { border-left-color:#f7768e; background:#2b1418 }
-
-/* listas */
+/* Listas / nav / detalhes */
 ul,ol{padding-left:1.2rem} li{margin:.22rem 0}
-
-/* navegação (se houver) */
 nav a{border:none}
+hr{border:none;height:2px;background:linear-gradient(90deg,transparent,var(--accent-2),transparent)}
+kbd{background:#271208;border:1px solid var(--border);color:var(--ink);border-radius:6px;padding:.05rem .35rem}
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:wght@400;600&display=swap");
+@use "./base.scss";
 
-/* pequenos detalhes rosa antigo */
-hr{border:none; height:2px; background:linear-gradient(90deg, transparent, var(--accent-2), transparent)}
-kbd{background:#271208; border:1px solid var(--border); color:var(--ink); border-radius:6px; padding:.05rem .35rem}
+/* Paleta sólida (segura) */
+:root{
+  --bg:#3b1f0e; --ink:#f5e6ca; --muted:#dbc9aa;
+  --accent:#4e8c8a; --accent-2:#c27a6d;
+  --card:#2c1509; --border:#6b513d;
+}
+
+/* Base */
+html,body{background:var(--bg);color:var(--ink);font-family:"Cormorant Garamond",ui-serif,Georgia,serif;}
+body,p,li,span,div,section,article{color:var(--ink);}
+
+/* Títulos */
+h1,h2,h3{font-family:"IM Fell English",ui-serif,Georgia,serif;letter-spacing:.3px;color:var(--ink);text-shadow:0 1px 0 rgba(0,0,0,.35)}
+h1{font-size:clamp(2.0rem,3.2vw,2.6rem)} h2{font-size:clamp(1.5rem,2.4vw,2.0rem)} h3{font-size:clamp(1.2rem,1.8vw,1.4rem)}
+
+/* Links */
+a,a:visited{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+a:hover{filter:brightness(.92);border-bottom-color:transparent}
+
+/* Contêineres */
+.page,.content,.article,main article,.popover{background:var(--card);border:2px solid var(--border);border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,.35);padding:1rem 1.2rem}
+
+/* Citação */
+blockquote{background:#3a1f15;border-left:6px solid var(--accent-2);color:var(--muted);padding:.8rem 1rem;margin:1rem 0}
+
+/* Código */
+code,pre code{background:#2a1209;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:.15rem .35rem}
+pre{padding:1rem 1.1rem;overflow-x:auto}
+
+/* Tabelas */
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+th,td{border-bottom:1px solid var(--border);padding:.6rem .7rem}
+thead th{background:#2f180c;color:var(--muted)}
+
+/* Tags */
+.tags a,a.tag,.tag-link{display:inline-block;background:#3a231a;color:var(--ink);border:1px solid var(--border);border-radius:999px;padding:.18rem .6rem;margin:.15rem .2rem;font-size:.85rem}
+
+/* Callouts */
+.callout,.admonition{border:2px solid var(--border);border-left-width:8px;border-radius:14px;padding:.9rem 1.1rem;margin:1rem 0;background:#241108;color:var(--ink)}
+.callout-note{border-left-color:#7aa2f7;background:#1f2230}
+.callout-tip{border-left-color:#73daca;background:#122522}
+.callout-info{border-left-color:#7dcfff;background:#142833}
+.callout-warning{border-left-color:#e0af68;background:#2e2212}
+.callout-danger{border-left-color:#f7768e;background:#2b1418}
+
+/* Listas / nav / detalhes */
+ul,ol{padding-left:1.2rem} li{margin:.22rem 0}
+nav a{border:none}
+hr{border:none;height:2px;background:linear-gradient(90deg,transparent,var(--accent-2),transparent)}
+kbd{background:#271208;border:1px solid var(--border);color:var(--ink);border-radius:6px;padding:.05rem .35rem}
