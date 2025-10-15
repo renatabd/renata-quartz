@@ -25,6 +25,9 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npx quartz build
+      - run: |
+          echo "=== LISTANDO public ==="
+          ls -la public | sed -e "s/^/          /"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
