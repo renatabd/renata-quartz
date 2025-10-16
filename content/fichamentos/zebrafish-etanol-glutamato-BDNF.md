@@ -1,4 +1,4 @@
-Resumo:  
+## Resumo:  
   
 O **consumo elevado de etanol (EtOH)** é uma condição grave que causa **tremores, psicose alcoólica e delirium**, sendo considerado um **problema de saúde pública mundial**.
 
@@ -14,5 +14,5 @@ Não foram observadas alterações nas **atividades enzimáticas cruciais** as
 A exposição prolongada ao EtOH **aumentou os níveis de GFAP, S100B e TNF-α** após **14 dias**.  
 Além disso, houve **aumento dos níveis de mRNA de BDNF** após **14 e 28 dias**, enquanto os **níveis proteicos de BDNF**aumentaram apenas após **28 dias**.
 
-👉 Em conjunto, os dados mostram **respostas astrogliárias, neuroinflamatórias e neurotróficas marcantes** no cérebro após uma **redução inicial da captação de glutamato** induzida pela exposição prolongada ao EtOH.  
+Em conjunto, os dados mostram **respostas astrogliárias, neuroinflamatórias e neurotróficas marcantes** no cérebro após uma **redução inicial da captação de glutamato** induzida pela exposição prolongada ao EtOH.  
 Esse **evento de neuroplasticidade** pode desempenhar um **papel modulador essencial** nos efeitos do etanol sobre a captação de glutamato após **28 dias de exposição contínua**.

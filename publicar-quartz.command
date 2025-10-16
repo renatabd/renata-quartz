@@ -1,59 +1,36 @@
 #!/bin/bash
 set -euo pipefail
-
-# === CONFIGURAÇÃO ===
-SOURCE="/Users/rbelizario/Internxt/Obsidian/Lab"
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-TARGET="$SCRIPT_DIR/content"
-SITE_URL="https://renatabd.github.io/renata-quartz"
-ACTIONS_URL="https://github.com/renatabd/renata-quartz/actions"
-
+OBSIDIAN="/Users/rbelizario/Internxt/Obsidian/Lab"
+REPO="/Users/rbelizario/Documents/Sites/quartz"
 echo "🔧 Publicar Quartz — início"
-echo "📁 Obsidian: $SOURCE"
-echo "📁 Repo Quartz: $SCRIPT_DIR"
-echo
-
-# 1️⃣ Limpa e recria content/
-echo "🧹 Limpando pasta content/"
-rm -rf "$TARGET"
-mkdir -p "$TARGET"
-
-# 2️⃣ Copia apenas notas que NÃO têm draft: true
-echo "📄 Copiando notas (ignorando drafts)..."
-find "$SOURCE" -type f -name "*.md" | while read -r file; do
+echo "📁 Obsidian: $OBSIDIAN"
+echo "📁 Repo Quartz: $REPO"
+cd "$REPO"
+rm -rf content
+mkdir -p content
+find "$OBSIDIAN" -type f -name "*.md" | while read -r file; do
   if ! grep -q "^draft:[[:space:]]*true" "$file"; then
-    relpath="${file#$SOURCE/}"
-    mkdir -p "$TARGET/$(dirname "$relpath")"
-    cp "$file" "$TARGET/$relpath"
+    rel="${file#$OBSIDIAN/}"
+    mkdir -p "content/$(dirname "$rel")"
+    cp "$file" "content/$rel"
   else
     echo "🚫 Ignorado (draft): $file"
   fi
 done
-
-# 3️⃣ Construir site
-echo
-echo "🏗️  Construindo o site (npx quartz build)..."
-cd "$SCRIPT_DIR"
-npx quartz build
-
-# 4️⃣ Commit + push
-echo
-echo "📤 Enviando ao GitHub..."
-git add .
-if git diff --cached --quiet && git diff --quiet; then
-  COMMIT_MSG="deploy: rebuild automático (sem alterações) $(date '+%Y-%m-%d %H:%M')"
-  git commit --allow-empty -m "$COMMIT_MSG"
-else
-  COMMIT_MSG="site: sync automático do Obsidian $(date '+%Y-%m-%d %H:%M')"
-  git commit -m "$COMMIT_MSG"
+if [ ! -f content/index.md ]; then
+  printf '%s\n' '---' 'title: Renata’s Laboratory' '---' '' '# Bem-vinda(o)' > content/index.md
 fi
+printf '%s\n' '@use "./base.scss";' '@use "./themes";' > quartz/styles/custom.scss
+if [ ! -d "quartz/styles/themes" ]; then
+  echo "🎨 Instalando tema Zen (local)..."
+  curl -fsSL https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- Zen
+fi
+echo "🏗️  Construindo o site (npx quartz build)..."
+npx quartz build
+echo "⬆️  Commit + push..."
+git add .
+git commit -m "publish: sync obsidian + build (zen theme)" || true
 git push
-
-# 5️⃣ Abre Actions e site
-echo
-echo "🚀 Deploy enviado! Abrindo no navegador..."
-open "$ACTIONS_URL" >/dev/null 2>&1 || true
-open "$SITE_URL/?v=$(date +%s)" >/dev/null 2>&1 || true
-
-echo
-echo "✅ Pronto! Em 1–2 min o site atualiza."
+open "https://github.com/renatabd/renata-quartz/actions" >/dev/null 2>&1 || true
+open "https://renatabd.github.io/renata-quartz/?v=$(date +%s)" >/dev/null 2>&1 || true
+echo "✅ Pronto!"

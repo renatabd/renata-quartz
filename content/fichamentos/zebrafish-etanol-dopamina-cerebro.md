@@ -10,7 +10,7 @@ tags:
   - cérebro
 draft: false
 ---
-Resumo:
+## Resumo:
 
 O consumo excessivo episódico de álcool (_binge drinking_) é definido como a ingestão infrequente de **doses excessivas de álcool em um curto período de tempo**. O **zebrafish** é um modelo confiável para investigar o impacto do consumo de etanol sobre o **sistema nervoso central (SNC)**, incluindo os mecanismos de **recompensa**, como o sistema de **neurotransmissão dopaminérgica**.
 

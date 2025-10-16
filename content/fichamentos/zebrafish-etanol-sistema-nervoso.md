@@ -9,9 +9,9 @@ tags:
   - cérebro
 draft: false
 ---
-Resumo:
+## Resumo:
 
-### **Achados comportamentais em zebrafish adultos**
+### Achados comportamentais em zebrafish adultos
 
 O texto descreve que **adultos expostos ao etanol** (tanto de forma **aguda** quanto **crônica**) apresentaram uma série de **efeitos dose-dependentes**:
 
@@ -27,7 +27,7 @@ o   **Alteração em respostas a predadores** e em comportamentos de explora�
 
 ·       **Preferência por álcool**: peixes expostos brevemente a etanol tenderam a preferir, posteriormente, o compartimento onde havia etanol — indicando **comportamento de busca por álcool (reward-seeking)**.
 
-### **Mecanismos neurobiológicos associados**
+### Mecanismos neurobiológicos associados
 
 Em **zebrafish adultos**, a exposição ao etanol afeta:
 

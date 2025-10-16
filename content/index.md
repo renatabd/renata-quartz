@@ -1,9 +1,8 @@
 ---
-title: Renata’s Laboratory
-description: Notas, ideias e experimentos
+title: Renata’s Digital Garden
+description: Doutorado e outras notas
 ---
 
-# Bem-vinda(o) ao meu Quartz ✨
+# Notas
 
-- [[Welcome]]
-- [[primeiro-post]]
+- [[Sintaxe]]
