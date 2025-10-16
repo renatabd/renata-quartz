@@ -25,27 +25,16 @@
 ## Materiais necessários
 
 - 2 aquários de vidro para grupo Etanol (2×9 L)
-    
 - Tampas de vidro bem ajustadas
-    
-- Esponjas individuais **(1 para cada grupo)**
-    
-- **Detergente neutro** (uso laboratorial, sem perfume)
-    
+- Esponjas individuais (1 para cada grupo)
+- Detergente neutro (uso laboratorial, sem perfume)
 - Água declorada / sistema com circulação
-    
 - Etanol 96% (PA)
-    
 - Cilindro graduado, pipetas de 10–50 mL
-    
-- Recipientes para **transbordo dos peixes** (1 para cada tanque)
-    
-- Balde de descarte para **água com etanol**
-    
-- Testes de pH e amônia
-    
+- Recipientes para transbordo dos peixes (1 para cada grupo)
+- Balde de descarte para água com etanol
+- Testes de pH
 - Planilha impressa de registros
-
 
 # Fluxo
 
@@ -54,19 +43,12 @@
 **Manhã (ordem fixa)**
 
 1. Limpeza do aquário.
-    
 2. **Trocar 100%** da água e completar **exatamente 9 L**.
-    
 3. Dosar **etanol 96% = 18,7 mL** por tanque (pré-diluir em 100–200 mL de água do próprio tanque e adicionar devagar pela parede).
-    
 4. Misturar **suave** (sem turbulência).
-    
 5. Fechar **tampa de vidro** bem assentada (minimiza evaporação).
-    
 6. Inspeção clínica.
-    
 7. Registrar (volume, **mL etanol**, T°, pH spot, observações).
-    
 
 **Tarde**
 
