@@ -1,1 +1,36 @@
-/* arquivo placeholder para evitar erro de build */
+:root{
+  --bg:#3b1f0e;
+  --ink:#f5e6ca;
+  --muted:#dbc9aa;
+  --accent:#4e8c8a;
+  --accent-2:#c27a6d;
+  --card:#2c1509;
+  --border:#6b513d;
+}
+html,body{background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+body,p,li,span,div,section,article{color:var(--ink)}
+h1,h2,h3{letter-spacing:.3px;color:var(--ink);text-shadow:0 1px 0 rgba(0,0,0,.35)}
+h1{font-size:clamp(2rem,3.2vw,2.6rem)}
+h2{font-size:clamp(1.5rem,2.4vw,2rem)}
+h3{font-size:clamp(1.2rem,1.8vw,1.4rem)}
+a,a:visited{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+a:hover{filter:brightness(.92);border-bottom-color:transparent}
+.page,.content,.article,main article,.popover{background:var(--card);border:2px solid var(--border);border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,.35);padding:1rem 1.2rem}
+blockquote{background:#3a1f15;border-left:6px solid var(--accent-2);color:var(--muted);padding:.8rem 1rem;margin:1rem 0}
+code,pre code{background:#2a1209;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:.15rem .35rem}
+pre{padding:1rem 1.1rem;overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+th,td{border-bottom:1px solid var(--border);padding:.6rem .7rem}
+thead th{background:#2f180c;color:var(--muted)}
+.tags a,a.tag,.tag-link{display:inline-block;background:#3a231a;color:var(--ink);border:1px solid var(--border);border-radius:999px;padding:.18rem .6rem;margin:.15rem .2rem;font-size:.85rem}
+.callout,.admonition{border:2px solid var(--border);border-left-width:8px;border-radius:14px;padding:.9rem 1.1rem;margin:1rem 0;background:#241108;color:var(--ink)}
+.callout-note{border-left-color:#7aa2f7;background:#1f2230}
+.callout-tip{border-left-color:#73daca;background:#122522}
+.callout-info{border-left-color:#7dcfff;background:#142833}
+.callout-warning{border-left-color:#e0af68;background:#2e2212}
+.callout-danger{border-left-color:#f7768e;background:#2b1418}
+ul,ol{padding-left:1.2rem}
+li{margin:.22rem 0}
+nav a{border:none}
+hr{border:none;height:2px;background:linear-gradient(90deg,transparent,var(--accent-2),transparent)}
+kbd{background:#271208;border:1px solid var(--border);color:var(--ink);border-radius:6px;padding:.05rem .35rem}
