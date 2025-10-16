@@ -1,5 +1,8 @@
 name: Deploy Quartz site
 
+env:
+  THEME_NAME: Zen
+
 on:
   push:
     branches: [ main ]
@@ -24,6 +27,9 @@ jobs:
           node-version: '22'
           cache: 'npm'
       - run: npm install
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
+
       - run: npx quartz build
       - run: |
           echo "=== LISTANDO public ==="
