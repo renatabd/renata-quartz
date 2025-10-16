@@ -10,7 +10,7 @@ tags:
 
 ---
 
-**1. Concentração e duração do etanol**
+## **1. Concentração e duração do etanol**
 
 |**Item**|**Park & Kim (2019)**|**Protocolo CEUA**|
 |---|---|---|
@@ -19,7 +19,7 @@ tags:
 |Tipo de exposição|Imersão contínua|Imersão contínua|
 |Frequência de troca da água|Diária, com tampa de vidro para evitar evaporação|Diária, também com tampa de vidro para evitar evaporação|
 
-**2. Espécie e condições de manutenção**
+## **2. Espécie e condições de manutenção**
 
 |**Item**|**Park & Kim (2019)**|**CEUA**|
 |---|---|---|
@@ -29,7 +29,7 @@ tags:
 |pH e oxigenação|Não informado|pH 7,0–8, com aeração e controle contínuo|
 |Alimentação|“Regular food” (ração comercial) 2x/dia, 10 mg/peixe/refeição|Ração comercial e artêmia 2x/dia, com protocolos específicos para dieta padrão ou obesogênica|
 
-**3. Parâmetros avaliados**
+## **3. Parâmetros avaliados**
 
 |**Item**|**Park & Kim (2019)**|**CEUA**|
 |---|---|---|
@@ -38,7 +38,7 @@ tags:
 |Avaliação molecular|qPCR de genes inflamatórios, apoptóticos, fibrogênicos, oxidativos e metabólicos|qPCR para genes de estresse oxidativo e inflamatórios (LCAT, TNF-α, IL-1β, IL-6, SOD1, Catalase, β-actina)|
 |Avaliação comportamental|Não incluída|Inclui **testes de ansiedade (claro/escuro)**|
 
-**4. Diferenças principais**
+## **4. Diferenças principais**
 
 |**Aspecto**|**Park & Kim (2019)**|**CEUA**|
 |---|---|---|

@@ -33,7 +33,7 @@ tags:
 |Quantificação|120 mg alimento úmido/peixe/dia (~3× alimentação padrão)|Sem detalhar quantidade; apenas menciona dieta rica em lipídios|
 |Monitoração|Pesagem periódica (dias 1, 5, 10, 15, 20, 25, 30)|Não há controle temporal descrito|
 
-## ⚗️ 4. **Parâmetros e análises**
+## 4. **Parâmetros e análises**
 
 |**Tipo de Análise**|**CEUA (Renata)**|**Iramaia**|
 |---|---|---|
