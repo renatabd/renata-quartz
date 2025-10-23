@@ -1,9 +1,8 @@
 - [x] Elaborar protocolo das etapas do projeto
-- [ ] Elaborar planilhas das etapas do projeto
-- [ ] Comprar fichário para planilhas e material Zebrafish
-- [ ] Comprar aquários (9L - ver se há necessidade)
-- [ ] Comprar Tetramin
-- [ ] Comprar anticloro - marca PRIME (concentrated conditioner for marine & freshwater)
-- [ ] Elaborar protocolo Gavage Etanol Zebrafish
-- [ ] Aliquotar rações
-- [ ] Separar compressores de oxigênio para os tanques
+- [x] Elaborar planilhas das etapas do projeto
+- [x] Comprar fichário para planilhas e material Zebrafish
+- [x] Comprar Tetramin
+- [x] Comprar anticloro - marca PRIME (concentrated conditioner for marine & freshwater)
+- [x] Elaborar protocolo Gavage Etanol Zebrafish
+- [x] Aliquotar rações
+- [x] Separar compressores de oxigênio para os tanques

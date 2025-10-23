@@ -39,12 +39,12 @@ Pensado para **dose aguda única** de etanol por via oral, minimizando risco d
 
 Abaixo, volume de **solução 20% v/v** necessário para diferentes metas (por **peixe**):
 
-|Peso (g)|0,25 g/kg|0,5 g/kg|1,0 g/kg|
-|--:|--:|--:|--:|
-|0,3|0,48 µL|0,95 µL|1,90 µL|
-|0,5|0,79 µL|1,58 µL|3,17 µL|
-|0,7|1,11 µL|2,22 µL|4,44 µL|
-|1,0|1,58 µL|3,17 µL|**6,34 µL** (↑>5)|
+| Peso (g) | 0,25 g/kg | 0,5 g/kg |          1,0 g/kg |
+| -------: | --------: | -------: | ----------------: |
+|      0,3 |   0,48 µL |  0,95 µL |           1,90 µL |
+|      0,5 |   0,79 µL |  1,58 µL |           3,17 µL |
+|      0,7 |   1,11 µL |  2,22 µL |           4,44 µL |
+|      1,0 |   1,58 µL |  3,17 µL | **6,34 µL** (↑>5) |
 
 → Para peixes **≥0,8–1,0 g**, se precisar chegar a **1,0 g/kg** sem passar de 5 µL, **suba a concentração para 30% v/v** (1,0 g/kg em 1,0 g ≈ 4,22 µL). Comece **sempre com 0,25–0,5 g/kg** e só escale se necessário.
 

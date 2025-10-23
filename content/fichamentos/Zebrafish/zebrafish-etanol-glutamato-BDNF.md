@@ -11,7 +11,6 @@ tags:
   - BDNF
 draft: false
 ---
-
 ## Resumo:  
   
 O **consumo elevado de etanol (EtOH)** é uma condição grave que causa **tremores, psicose alcoólica e delirium**, sendo considerado um **problema de saúde pública mundial**.
